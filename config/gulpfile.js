@@ -247,11 +247,11 @@ gulp.task('includes', () =>
 {
 	return gulp.src(
 		[
-			`${path.src.includes}*.php`,
-			`${path.src.includes}**/*.php`,
-			`${path.src.includes}**/**/*.php`,
-			`${path.src.includes}**/**/**/*.php`,
-			`${path.src.includes}**/**/**/**/*.php`
+			`${path.src.includes}*.html`,
+			`${path.src.includes}**/*.html`,
+			`${path.src.includes}**/**/*.html`,
+			`${path.src.includes}**/**/**/*.html`,
+			`${path.src.includes}**/**/**/**/*.html`
 		])
 		.pipe(gulpPlumber(
 			{
@@ -277,7 +277,7 @@ gulp.task('includes', () =>
 
 gulp.task('index', () =>
 {
-	return gulp.src(`${path.src.root}index.php`)
+	return gulp.src(`${path.src.root}index.html`)
 		.pipe(gulpPlumber(
 			{
 				errorHandler : gulpNotify.onError(
@@ -351,18 +351,18 @@ gulp.task('watch', () =>
 	// Watch includes
 	gulp.watch(
 		[
-			`${path.src.includes}*.php`,
-			`${path.src.includes}**/*.php`,
-			`${path.src.includes}**/**/*.php`,
-			`${path.src.includes}**/**/**/*.php`,
-			`${path.src.includes}**/**/**/**/*.php`
+			`${path.src.includes}*.html`,
+			`${path.src.includes}**/*.html`,
+			`${path.src.includes}**/**/*.html`,
+			`${path.src.includes}**/**/**/*.html`,
+			`${path.src.includes}**/**/**/**/*.html`
 		], ['includes'])
 		.on('change', browserSync.reload)
 
 	// Watch index
 	gulp.watch(
 		[
-			`${path.src.root}index.php`
+			`${path.src.root}index.html`
 		], ['index'])
 		.on('change', browserSync.reload)
 })
@@ -435,11 +435,11 @@ gulp.task('production', () =>
 	// Export includes
 	gulp.src(
 		[
-			`${path.app.includes}*.php`,
-			`${path.app.includes}**/*.php`,
-			`${path.app.includes}**/**/*.php`,
-			`${path.app.includes}**/**/**/*.php`,
-			`${path.app.includes}**/**/**/**/*.php`
+			`${path.app.includes}*.html`,
+			`${path.app.includes}**/*.html`,
+			`${path.app.includes}**/**/*.html`,
+			`${path.app.includes}**/**/**/*.html`,
+			`${path.app.includes}**/**/**/**/*.html`
 		])
 		.pipe(gulp.dest(path.dist.includes))
 		.pipe(gulpNotify(
@@ -450,7 +450,7 @@ gulp.task('production', () =>
 			}))
 
 	// Export index
-	gulp.src(`${path.app.root}index.php`)
+	gulp.src(`${path.app.root}index.html`)
 		.pipe(gulp.dest(path.dist.root))
 		.pipe(gulpNotify(
 			{
