@@ -5,7 +5,7 @@ export const $canvas = document.querySelector('canvas')
 export const context = $canvas != undefined ? $canvas.getContext('2d') : undefined
 
 // Create molecules
-const number    = Math.round((screen.width + screen.height) / 2 / 250)
+const number    = Math.round((screen.width + screen.height) / 2 / 100)
 const molecules = new Array()
 for (let i = 0; i < number; i++)
 {
@@ -56,7 +56,7 @@ export default class Canvas
         for (const molecule of this.molecules)
         {
             const opacity = 1 - (molecule.y + molecule.size) / $canvas.height
-            context.strokeStyle = `rgba(238, 238, 238, ${opacity})`
+            context.strokeStyle = `rgba(255, 255, 255, ${opacity})`
             molecule.draw()
 
             // Update parameters

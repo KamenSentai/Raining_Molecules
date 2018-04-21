@@ -1,13 +1,11 @@
-import Canvas   from './Canvas'
-import Parallax from './Parallax'
-import Mouse    from './Mouse'
+import Canvas from './Canvas'
+import Mouse  from './Mouse'
 
 import { $canvas }   from './Canvas'
 import { molecules } from './Canvas'
 
-const canvas   = new Canvas(molecules)
-const parallax = new Parallax()
-const mouse    = new Mouse()
+const canvas = new Canvas(molecules)
+const mouse  = new Mouse()
 
 export default class Animation
 {
@@ -26,7 +24,6 @@ export default class Animation
                 const loop = () =>
                 {
                     canvas.setFrame()
-                    parallax.setView()
                     mouse.setMovement()
                     window.requestAnimationFrame(loop)
                 }
@@ -36,7 +33,6 @@ export default class Animation
             {
                 const loop = () =>
                 {
-                    parallax.setView()
                     mouse.setMovement()
                     window.requestAnimationFrame(loop)
                 }
@@ -71,7 +67,6 @@ export default class Animation
 
             if ($canvas != undefined)
             {
-
                 const loop = () =>
                 {
                     // Move molecule
@@ -81,16 +76,6 @@ export default class Animation
                         molecule.rotate = Math.abs(molecule.rotate) * (moduloAngle(gammaAngle) > 180 ? - 1 : 1)
                     }
                     canvas.setFrame()
-                    parallax.setView(reduceAngle(alphaAngle) / 180, (reduceAngle(betaAngle) - 90 )/ 180 - 0.5)
-                    window.requestAnimationFrame(loop)
-                }
-                loop()
-            }
-            else
-            {
-                const loop = () =>
-                {
-                    parallax.setView(reduceAngle(alphaAngle) / 180, (reduceAngle(betaAngle - 90)) / 180 - 0.5)
                     window.requestAnimationFrame(loop)
                 }
                 loop()
