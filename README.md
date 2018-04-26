@@ -20,6 +20,6 @@
   - Styrene
   - Coronene
 
-# Credits
+## Credits
 
 - Author : [Alain Cao Van Truong](https://github.com/KamenSentai)
