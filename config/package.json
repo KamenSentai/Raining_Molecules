@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KamenSentai/raining_molecules.git"
+    "url": "git+https://github.com/KamenSentai/Raining_Molecules.git"
   },
   "keywords": [
     "raining",
@@ -45,7 +45,7 @@
   "author": "Alain Cao Van Truong",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KamenSentai/raining_molecules/issues"
+    "url": "https://github.com/KamenSentai/Raining_Molecules/issues"
   },
-  "homepage": "https://github.com/KamenSentai/raining_molecules#readme"
+  "homepage": "https://github.com/KamenSentai/Raining_Molecules#readme"
 }
