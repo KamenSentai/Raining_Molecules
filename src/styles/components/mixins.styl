@@ -1,31 +1,31 @@
 center()
-    position absolute
-    left 50%
-    top 50%
-    transform translate(-50%, -50%)
+  position absolute
+  left 50%
+  top 50%
+  transform translate(-50%, -50%)
 
 composite(c, t, e)
-    transition : c t e
-    will-change : c
+  transition : c t e
+  will-change : c
 
 composites(ot, oe, tt, te)
-    transition : opacity ot oe, transform tt te
-    will-change : opacity, transform
+  transition : opacity ot oe, transform tt te
+  will-change : opacity, transform
 
 full-size()
-    width 100%
-    height 100%
+  width 100%
+  height 100%
 
 position-absolute(l = 0, t = 0)
-    left l
-    top t
+  left l
+  top t
 
 pseudo-element(w = 100%, h = 100%, l = 0, t = 0)
-    content ''
-    position absolute
-    size(w, h)
-    position-absolute(l, t)
+  content ''
+  position absolute
+  size(w, h)
+  position-absolute(l, t)
 
 size(w, h)
-    width w
-    height h
+  width w
+  height h

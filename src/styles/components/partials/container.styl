@@ -5,9 +5,9 @@
 \* -------------------------------------------------- */
 
 .wrapper
+  full-size()
+  opacity 0
+  composite(opacity, 0.5s, ease-out)
+  animation opacity-toggle 0.5s ease-out 0.5s forwards
+  .wrapper__container
     full-size()
-    opacity 0
-    composite(opacity, 0.5s, ease-out)
-    animation opacity-toggle 0.5s ease-out 0.5s forwards
-    .wrapper__container
-        full-size()
