@@ -1,41 +1,41 @@
 @-webkit-keyframes scale-x-toggle {
   from {
     -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    transform: scaleX(0);
   }
   to {
     -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
   }
 }
 @keyframes scale-x-toggle {
   from {
     -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    transform: scaleX(0);
   }
   to {
     -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
   }
 }
 @-webkit-keyframes scale-y-toggle {
   from {
     -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    transform: scaleY(0);
   }
   to {
     -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    transform: scaleY(1);
   }
 }
 @keyframes scale-y-toggle {
   from {
     -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    transform: scaleY(0);
   }
   to {
     -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    transform: scaleY(1);
   }
 }
 @-webkit-keyframes opacity-toggle {
@@ -57,45 +57,45 @@
 @-webkit-keyframes particle-movement {
   0% {
     -webkit-transform: rotateZ(0);
-            transform: rotateZ(0);
+    transform: rotateZ(0);
   }
   25% {
     -webkit-transform: rotateZ(90deg);
-            transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
   }
   50% {
     -webkit-transform: rotateZ(180deg);
-            transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
   }
   75% {
     -webkit-transform: rotateZ(270deg);
-            transform: rotateZ(270deg);
+    transform: rotateZ(270deg);
   }
   100% {
     -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
   }
 }
 @keyframes particle-movement {
   0% {
     -webkit-transform: rotateZ(0);
-            transform: rotateZ(0);
+    transform: rotateZ(0);
   }
   25% {
     -webkit-transform: rotateZ(90deg);
-            transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
   }
   50% {
     -webkit-transform: rotateZ(180deg);
-            transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
   }
   75% {
     -webkit-transform: rotateZ(270deg);
-            transform: rotateZ(270deg);
+    transform: rotateZ(270deg);
   }
   100% {
     -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
   }
 }
 html {
@@ -125,7 +125,7 @@ html body * {
   transition: opacity 0.5s ease-out;
   will-change: opacity;
   -webkit-animation: opacity-toggle 0.5s ease-out 0.5s forwards;
-          animation: opacity-toggle 0.5s ease-out 0.5s forwards;
+  animation: opacity-toggle 0.5s ease-out 0.5s forwards;
 }
 .wrapper .wrapper__container {
   width: 100%;
@@ -140,7 +140,7 @@ html body * {
   background-color: #eee;
   border-radius: 100%;
   -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  transform: translate(0, 0);
   will-change: transform;
 }
 .mouse .particles {
@@ -150,7 +150,7 @@ html body * {
   width: 0.5rem;
   height: 0.5rem;
   -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  transform: translate(0, 0);
   will-change: opacity, transform;
 }
 .mouse .particles .particle {
@@ -170,36 +170,38 @@ html body * {
   background-color: #eee;
   border-radius: 100%;
   -webkit-transform-origin: 50% 2.5rem;
-          transform-origin: 50% 2.5rem;
+  transform-origin: 50% 2.5rem;
   -webkit-transform: rotateZ(0);
-          transform: rotateZ(0);
+  transform: rotateZ(0);
   -webkit-animation: particle-movement linear infinite;
-          animation: particle-movement linear infinite;
+  animation: particle-movement linear infinite;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   will-change: transform;
 }
 .mouse .particles .particle.index-1 {
   -webkit-transform: rotateZ(0) scaleX(0.25);
-          transform: rotateZ(0) scaleX(0.25);
+  transform: rotateZ(0) scaleX(0.25);
 }
 .mouse .particles .particle.index-1::after {
   -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
 }
 .mouse .particles .particle.index-2 {
   -webkit-transform: rotateZ(60deg) scaleX(0.25);
-          transform: rotateZ(60deg) scaleX(0.25);
+  transform: rotateZ(60deg) scaleX(0.25);
 }
 .mouse .particles .particle.index-2::after {
   -webkit-animation-delay: 0.333333333333333s;
-          animation-delay: 0.333333333333333s;
+  animation-delay: 0.333333333333333s;
 }
 .mouse .particles .particle.index-3 {
   -webkit-transform: rotateZ(120deg) scaleX(0.25);
-          transform: rotateZ(120deg) scaleX(0.25);
+  transform: rotateZ(120deg) scaleX(0.25);
 }
 .mouse .particles .particle.index-3::after {
   -webkit-animation-delay: 0.666666666666667s;
-          animation-delay: 0.666666666666667s;
+  animation-delay: 0.666666666666667s;
 }
+
+/*# sourceMappingURL=app.css.map */
